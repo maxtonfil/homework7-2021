@@ -8,7 +8,9 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	video.play();
-	document.querySelector("#volume").innerHTML = "100%"
+	if (document.querySelector("#volume") == ""){
+		document.querySelector("#volume").innerHTML = "100%";
+	}
  	console.log("Play Video");
 });
 
